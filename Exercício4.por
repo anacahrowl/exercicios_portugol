@@ -1,31 +1,31 @@
 programa
-{
-	
-	funcao inicio()
-	{
-		inteiro x, soma=0
 
-		para (x=1; x <=500; x++)
-		{
-			se (x%3==0)
-			
-			{ escreva (" Os múltiplos de 3 até 500 são: ", x)
-				soma=soma+x
-				
-			}
-		}
-		escreva("\nA soma de todos os números ímpares e multiplos de três e que se encontram no conjunto dos números de 1 até 500 é:",soma)
+{  inclua biblioteca Util 
+	
+	funcao inicio() 
+	{
+		inteiro contador = 10
 		
+		enquanto (contador > 0)
+		{
+			limpa()
+			escreva ("Detonação em: ", contador)
+		  	
+		  	contador = contador - 1
+		  	Util.aguarde(1000) // Aguarda 1000 millisegundos (1 segundo)
+		}
+
+		limpa()
+		escreva ("Booom!\n")
 	}
-	
-	
 }
+	
 /* $$$ Portugol Studio $$$ 
  * 
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 205; 
+ * @POSICAO-CURSOR = 12; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
